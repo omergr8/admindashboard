@@ -1,0 +1,50 @@
+.sidebar{
+    width: 345px;
+    position: fixed;
+    left: 0;
+    top:0;
+    height:100%;
+    background: #DD2F6E;
+    z-index: 100;
+    transition: width 300ms;
+}
+.sidebarCollapse{
+    width: 95px;
+    position: fixed;
+    left: 0;
+    top:0;
+    height:100%;
+    background: #DD2F6E;
+    z-index: 100;
+    
+}
+@media only screen and (max-width:1200px){
+    .sidebar{
+        width: 95px;
+    }
+    .sidebar li a span:last-child{
+        display: none;
+    }
+
+    .sidebar:hover{
+        width: 345px;
+        z-index: 200 ;
+    }
+    .sidebar:hover li a span:last-child{
+        display: inline;
+    }
+}
+@media only screen and (max-width:768px){
+.sidebar{
+    left:-100% !important
+}
+.sidebarCollapse{
+    left: 0  !important;
+    z-index: 100;
+    width: 345px;
+}
+
+.sidebarCollapse li a span:last-child{
+    display: inline;
+}
+}

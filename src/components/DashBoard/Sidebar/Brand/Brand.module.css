@@ -1,0 +1,25 @@
+.sidebarBrand{
+    height: 90px;
+    padding: 1rem 0rem 1rem 3.2rem;
+}
+/* .sidebarBrand span{
+    display: inline-block;
+    padding-right: 1rem;
+} */
+.hideLabel{
+    display:none;
+
+}
+@media only screen and (max-width:1200px){
+    .sidebarBrand h2 span:last-child{
+        display: none;
+    }
+    .sidebarBrand:hover h2 span:last-child{
+        display: inline;
+    }
+}
+@media only screen and (max-width:768px){
+    .hideLabel h2 span:last-child{
+        display: inline;
+    }
+}

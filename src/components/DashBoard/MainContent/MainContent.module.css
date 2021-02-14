@@ -1,0 +1,27 @@
+.mainContent{
+    margin-left: 345px;
+    transition: margin-left 300ms;
+}
+.mainContentCollapse{
+    margin-left: 75px;
+}
+main{
+    margin-top: 120px;
+    padding:2rem 1.5rem;
+    background: #f1f5f9;
+    min-height: calc(100vh - 90px);
+}
+@media only screen and (max-width:1200px){
+    .mainContent{
+        margin-left: 75px;
+    }
+}
+@media only screen and (max-width:768px){
+    .mainContent{
+        width: 100%;
+        margin-left: 0rem;
+    }
+    .mainContentCollapse{
+        margin-left: 0rem !important;
+    }
+}

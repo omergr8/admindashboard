@@ -1,0 +1,104 @@
+.userImage{
+    height: 40px;
+    width: 40px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    position: fixed;
+    left: 345px;
+    width: calc(100% - 345px);
+    top: 0;
+    z-index: 100;
+    transition: left 300ms;
+    background: #fff;
+}
+.headerWidth{
+    left: 95px;
+    width: calc(100% - 95px);
+}
+header h2{
+    color:#222;
+}
+header label span {
+    font-size: 1.7rem;
+    padding-right: 1rem;
+}
+.searchWrapper{
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    overflow-x: hidden;
+}
+.searchWrapper span{
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+}
+.searchWrapper input {
+    height: 100%;
+    padding:.5rem;
+    border:none;
+    outline: none;
+}
+.userWrapper{
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+.userWrapper img{
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.userWrapper small{
+    display: inline-block;
+    color: #8390A2;
+    
+}
+@media only screen and (max-width:1200px){
+    .header{
+        left: 95px;
+        width: calc(100% - 95px);
+    }
+}
+
+@media only screen and (max-width:768px){
+.searchWrapper{
+    display: none;
+}
+header h2{
+    display: flex;
+    align-items: center;
+}
+header h2 label{
+    display:inline-block;
+    background: #DD2F6E;
+    padding-right: 0rem;
+    margin-right: 1rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+}
+header h2 span{
+    text-align: center;
+    padding-right: 0rem;
+  
+}
+header h2{
+    font-size: 1.1rem;
+}
+header{
+    width: 100% !important;
+    left:0 !important;
+   
+}
+}

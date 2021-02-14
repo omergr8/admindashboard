@@ -1,0 +1,33 @@
+.sidebarMenu{
+    margin-top: 1rem;
+}
+.sidebarMenu ul{
+    list-style-type: none;
+}
+.sidebarMenu li{
+    width: 100%;
+    margin-bottom: 1.7rem;
+    padding-left: 0rem;
+   
+}
+.sidebarMenu a{
+    display:block;
+    color: #fff;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    
+}
+.sidebarMenu a span:first-child{
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+.sidebarMenu a.active{
+background: #fff;
+padding-top: 1rem;
+padding-bottom: 1rem;
+color:#DD2F6E;
+border-radius: 30px 0px 0px 30px;
+}
+.hide{
+    display:none
+}
